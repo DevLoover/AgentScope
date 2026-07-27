@@ -98,6 +98,28 @@ If **any step fails**, the entire workflow silently breaks — and today, this i
 
 **There is no unified platform that gives developers complete visual visibility into AI agent execution.** AgentScope fills that gap.
 
+
+🚀 Built AgentScope — "Chrome DevTools for AI Agents"
+
+AI agents today can plan, call tools, search, remember, and act — but when something breaks, all you usually get is:
+
+"Something went wrong."
+
+No idea which step failed. Which tool errored out. Whether the agent hallucinated a tool call. Whether it got stuck in a loop hammering the same API 5 times in a row while your token bill quietly climbs.
+
+So I built AgentScope — an observability and debugging platform that gives developers full visibility into how their AI agents actually execute, not just what they output.
+
+🔍 What it does:
+
+→ Execution Timeline — visualize every reasoning step, tool call, and decision the agent makes, in order → Tool Monitor — track latency, failures, retries, and duplicate calls per tool → Memory Inspector — see exactly when the agent reads/writes memory (and catch stale or contradictory context before it causes weird outputs) → Cost Dashboard — break down input/output tokens and cost per run, so you can actually find your expensive workflows → Loop Detection — catch infinite search-search-search patterns before they burn your API budget → Reliability Report — a single score per run (with failures, retries, latency, cost) so you can compare agent runs at a glance
+
+🛠️ Stack: FastAPI/Node.js backend with OpenTelemetry for tracing, PostgreSQL + Redis, React/Next.js frontend with Tailwind and React Flow/D3.js for the execution graphs — designed to plug into LangGraph, CrewAI, AutoGen, and MCP-compatible agents.
+
+Why this matters: as agents move from single LLM calls to dozens of chained tool calls and decisions, "it failed somewhere" is not good enough for production. Debugging agentic systems needs the same rigor we brought to debugging web apps 15 years ago.
+
+Demo video + screenshots below 👇
+
+#AIAgents #LLM #DeveloperTools #Observability #AgentOps #BuildInPublic #OpenSource #AI
 ---
 
 ## ✨ Features
