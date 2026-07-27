@@ -337,7 +337,7 @@ cost_threshold    = 1.00              # Fire alert when run cost exceeds $X
 latency_threshold = 10000             # Fire alert when run latency exceeds Xms
 
 [reliability]
-min_score = 80                        # Fail CI check if reliability score drops below this
+min_score = 80                       # Fail CI check if reliability score drops below this
 ```
 
 **Precedence** (low → high): built-in defaults → `agentscope.toml` → environment variables.
