@@ -98,7 +98,6 @@ If **any step fails**, the entire workflow silently breaks — and today, this i
 
 **There is no unified platform that gives developers complete visual visibility into AI agent execution.** AgentScope fills that gap.
 
-
 🚀 Built AgentScope — "Chrome DevTools for AI Agents"
 
 AI agents today can plan, call tools, search, remember, and act — but when something breaks, all you usually get is:
@@ -111,13 +110,21 @@ So I built AgentScope — an observability and debugging platform that gives dev
 
 🔍 What it does:
 
-→ Execution Timeline — visualize every reasoning step, tool call, and decision the agent makes, in order → Tool Monitor — track latency, failures, retries, and duplicate calls per tool → Memory Inspector — see exactly when the agent reads/writes memory (and catch stale or contradictory context before it causes weird outputs) → Cost Dashboard — break down input/output tokens and cost per run, so you can actually find your expensive workflows → Loop Detection — catch infinite search-search-search patterns before they burn your API budget → Reliability Report — a single score per run (with failures, retries, latency, cost) so you can compare agent runs at a glance
+→ Execution Timeline — visualize every reasoning step, tool call, and decision the agent makes, in order
+→ Tool Monitor — track latency, failures, retries, and duplicate calls per tool
+→ Memory Inspector — see exactly when the agent reads/writes memory (and catch stale or contradictory context before it causes weird outputs)
+→ Cost Dashboard — break down input/output tokens and cost per run, so you can actually find your expensive workflows
+→ Loop Detection — catch infinite search-search-search patterns before they burn your API budget
+→ Reliability Report — a single score per run (with failures, retries, latency, cost) so you can compare agent runs at a glance
 
 🛠️ Stack: FastAPI/Node.js backend with OpenTelemetry for tracing, PostgreSQL + Redis, React/Next.js frontend with Tailwind and React Flow/D3.js for the execution graphs — designed to plug into LangGraph, CrewAI, AutoGen, and MCP-compatible agents.
 
 Why this matters: as agents move from single LLM calls to dozens of chained tool calls and decisions, "it failed somewhere" is not good enough for production. Debugging agentic systems needs the same rigor we brought to debugging web apps 15 years ago.
 
-Demo video + screenshots below 👇
+
+Built by Manthan Dubey
+📧 dubeymanthan007@gmail.com
+🔗 [linkedin.com/in/manthandubey](https://www.linkedin.com/in/manthandubey)
 
 #AIAgents #LLM #DeveloperTools #Observability #AgentOps #BuildInPublic #OpenSource #AI
 ---
@@ -359,7 +366,7 @@ cost_threshold    = 1.00              # Fire alert when run cost exceeds $X
 latency_threshold = 10000             # Fire alert when run latency exceeds Xms
 
 [reliability]
-min_score = 80                       # Fail CI check if reliability score drops below this
+min_score = 80                        # Fail CI check if reliability score drops below this
 ```
 
 **Precedence** (low → high): built-in defaults → `agentscope.toml` → environment variables.
@@ -516,8 +523,15 @@ This project is open-source and licensed under the **[MIT License](LICENSE)**.
 
 <br/>
 
-**🌐 Connect**
+Have questions, feedback, or want to collaborate? Feel free to reach out — I respond to every message.
 
+<br/>
+
+[![Gmail](https://img.shields.io/badge/Gmail-dubeymanthan007%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dubeymanthan007@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Manthan_Dubey-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manthandubey)
+
+<br/>
+
+<sub>📬 For professional inquiries, partnerships, or integration support — <a href="mailto:dubeymanthan007@gmail.com">dubeymanthan007@gmail.com</a></sub>
 
 </div>
